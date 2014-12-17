@@ -1,0 +1,2 @@
+angular
+	.module("fingApp", ['firebase']);

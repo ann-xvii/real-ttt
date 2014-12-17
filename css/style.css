@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'treasure_map_deadhandregular';
+    src: url('../fonts/treamd-webfont.eot');
+    src: url('../fonts/treamd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/treamd-webfont.woff2') format('woff2'),
+         url('../fonts/treamd-webfont.woff') format('woff'),
+         url('../fonts/treamd-webfont.ttf') format('truetype'),
+         url('../fonts/treamd-webfont.svg#treasure_map_deadhandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+	text-align: center;
+	font-family: 'treasure_map_deadhandregular';
+	font-size: 30px;
+	/*font-family: 'Consolas';*/
+	background: url('../img/tonnant-lebreton.jpg');
+	background-size: 100%;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 1em 0;	
+}
+
+/*cells are now 150px*/
+
+.left-container {
+	display: inline-block;
+	width: 500px;
+	/*border: 2px solid magenta;*/
+	vertical-align: top;
+	padding: 20px;
+	background-color: rgba(255,255,255,0.5);
+	margin-right: 20px;
+}
+
+.right-container {
+	display: inline-block;
+	width: 350px;
+	/*border: 2px solid limegreen;*/
+	vertical-align: top;
+	padding: 0px 20px 20px 20px;
+	/*background-color: rgba(255,255,255,0.5);*/
+	margin-left: 20px;
+
+}
+
+#scoreboard {
+	vertical-align: top;
+	/*border: 2px solid blue;*/
+	background-color: rgba(255,255,255,0.5);
+}
+
+#chat {
+	/*border: 2px solid blue;*/
+	background-color: rgba(255,255,255,0.5);
+}
+
+
+#board {
+	width: 450px;
+	height: 450px;
+	border: 2px solid black;
+	padding: 10px 10px 20px 10px;
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+}
+
+#hiddenb {
+	display: none;
+}
+
+
+#board td {
+	width: 150px;
+	height: 150px;
+	border: 1px solid gray;
+	border-radius: 10%;
+}
+
+#board td:hover {
+	background-color: rgba(172, 185, 198, 0.5);
+}
+
+tr {
+	text-align: center;
+}
+
+button {
+	font-family: 'treasure_map_deadhandregular';
+}
+
+.estilo {
+	font-family: 'Fantasy clipart 2';
+	font-weight: lighter;
+	font-size: 50px;
+}
+
+.cell-1 {
+	/*background: url(../img/real-x.png) no-repeat;*/
+	background: url(../img/x-skull.png) no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 5px;
+	
+}
+
+.cell-2 {
+	/*background: url(../img/real-o.png) no-repeat;*/
+	background: url(../img/o-crown.png) no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 5px;
+	
+}
+
+p {
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+/*.winMove-1 {
+	background: url(../img/win1.png) no-repeat;
+	position: relative;
+	z-index: 2;
+}
+
+.winMove-2 {
+	background: url(../img/win2.png) no-repeat;
+	position: relative;
+	z-index: 2;
+}
+
+.winMove-3 {
+	background: url(../img/win3.png) no-repeat;
+	position: relative;
+	z-index: 2;
+}
+
+.winMove-4 {
+	background: url(../img/win4.png) no-repeat;
+	position: relative;
+	z-index: 2;
+}
+
+.winMove-5 {
+	background: url(../img/win5.png) no-repeat;
+	position: relative;
+	z-index: 2;
+}
+
+.winMove-6 {
+	background: url(../img/win6.png) no-repeat;
+	position: relative;
+	z-index: 2;
+}
+
+.winMove-7 {
+	background: url(../img/win7.png) no-repeat;
+	position: relative;
+	z-index: 2;
+}
+
+.winMove-8 {
+	background: url(../img/win8.png) no-repeat;
+	position: relative;
+	z-index: 2;
+}*/

@@ -1,0 +1,9 @@
+{
+  "firebase": "aoa-ttt",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

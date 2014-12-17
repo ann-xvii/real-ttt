@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="fingApp">
+
+<head>
+	<title>Ultimate!</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+	<script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/Game.js"></script>
+	<script type="text/javascript" src="js/ChatController.js"></script>
+	
+
+
+</head>
+
+<body ng-controller="Game as board">
+	<header>
+		<h1>Noughts & Crosses: Pirates vs Royal Navy</h1>
+	</header>
+	<div id="container">
+
+	<!-- left container, game board -->
+	<div class="left-container">
+		<section id="board"  >
+			<table class="winMove-{{ board.fb.winMove }}">
+				<tr ng-repeat="row in board.fb.rows track by $index">
+					<td ng-repeat="cell in row track by $index"  ng-click="board.check($parent.$index,$index)" class="cell-{{ cell }}"><!-- <span id="hiddenb">board</span> --></td>
+				</tr>
+			</table>
+			<p ng-model="fb.message" class="message">{{ board.fb.message }}</p>
+		</section>
+	</div> <!-- end of left container -->
+		
+
+	<!-- right container, score board and chat -->
+	<div class="right-container">
+		<section id="scoreboard">
+			<h2>Scoreboard</h2>
+			<h3><span class="estilo">&#83;</span>Player 1: {{ board.fb.player1Record }}</h3>
+			<h3><span class="estilo">&#65;</span>Player 2: {{ board.fb.player2Record }}</h3>
+		</section>
+		<br><br>
+		<section id="chat" ng-controller="">
+			<button ng-click="board.reset()">Reset</button>
+		</section>
+	</div>
+	<!-- end of right container -->
+
+
+	</div> 
+</body>
+</html>
